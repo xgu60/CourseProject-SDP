@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.gobowl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="edu.gatech.seclass.gobowl.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gatech.seclass.gobowl.activities.ManagerActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.CustomerActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.ScanCustomerCardActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.LaneCheckoutActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.AddNewCustomerActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.CustomerAddedActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.CustomerInfoPromptActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.PrintCustomerCardActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.EditCustomerActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.CustomerCardPrintConfirmationActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.LaneAssignedActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.ThanksActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.ViewScoresActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.LaneCheckoutSaveScoresPromptActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.BillActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.SwipeCreditCardActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.BillAmountVerificationActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.EnterScoresListActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.EnterIndividualScoreActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.MessageActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.RequestLaneScanCodeForRegisterActivity" />
+        <activity android:name="edu.gatech.seclass.gobowl.activities.ScanCardsToViewScores"></activity>
+    </application>
+
+</manifest>

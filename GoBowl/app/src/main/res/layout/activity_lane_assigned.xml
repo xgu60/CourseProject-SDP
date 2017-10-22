@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.seclass.gobowl.activities.LaneAssignedActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You&apos;ve been assigned to lane 9"
+        android:id="@+id/textViewLane"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan the Customers' card to play"
+        android:id="@+id/buttonPlay"
+        android:onClick="buttonPlay_onClick"
+        android:layout_below="@+id/numbers_players"
+        android:layout_alignRight="@+id/textViewLane"
+        android:layout_alignEnd="@+id/textViewLane"
+        android:layout_marginTop="43dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:id="@+id/gridLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/buttonCancelPlay"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="buttonCancelPlay_onClick" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="players"
+        android:id="@+id/textView32"
+        android:textAlignment="gravity"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numbers_players"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="1" />
+
+</RelativeLayout>
